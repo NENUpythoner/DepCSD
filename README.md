@@ -1,7 +1,9 @@
 # DepCSD
 This repository is a detailed description of the article "Depth-Conditioned Self-Supervised Dehazing for Real Scenes"
+![Description of image](/Images/2.png)
 
-## Image
+
+## Images
 In the directory "Image", all high-definition pictures displayed in the article are provided for readers to review.
 
 ## Code
