@@ -12,3 +12,10 @@ Fig.2 The restored images of real hazy images obtained using the purposed DepCSD
 
 ## Code
 We will release the detailed code needed to reproduce the experimental part of the article later.
+
+# Acknowledgements
+Jun Liu, Key Laboratory for Applied Statistics of MOE, School of Mathematics and Statistics, Northeast Normal University, Changchun 130024, P. R. China.
+
+Liang-Jian Deng, School of Mathematical Sciences, University of Electronic Science and Technology of China, Chengdu 611731, China (e-mail: liangjian.deng@uestc.edu.cn).
+
+Hao Liu, Department of Mathematics, Hong Kong Baptist University, Kowloon Tong, Kowloon, Hong Kong SAR.
