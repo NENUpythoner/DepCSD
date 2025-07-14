@@ -7,7 +7,7 @@ Fig.1 The model framework of DepCSD. First, the hazy image is input into the ini
 ## Images
 In the directory "Image", all high-definition pictures displayed in the article are provided for readers to review.
 
-![Description of image](/Images/1.png)
+![Description of image](/Images/2.png)
 Fig.2 The restored images of real hazy images obtained using the purposed DepCSD framework.
 
 ## Code
