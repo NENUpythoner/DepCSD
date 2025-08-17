@@ -7,8 +7,25 @@ Fig.1 The model framework of DepCSD. First, the hazy image is input into the ini
 ## Images
 In the directory "Image", all high-definition pictures displayed in the article are provided for readers to review.
 
-![Description of image](/Images/2.png)
-Fig.2 The restored images of real hazy images obtained using the DepCSD.
+![Description of image](/Images/Urban-1.png)
+![Description of image](/Images/Urban-2.png)
+Fig.2 Dehazing results of real urban hazy images.
+
+![Description of image](/Images/Traffic-1.png)
+![Description of image](/Images/Traffic-2.png)
+Fig.3 Dehazing results of real Traffic hazy images.
+
+![Description of image](/Images/People-1.png)
+![Description of image](/Images/People-2.png)
+Fig.4 Dehazing results of real People hazy images.
+
+![Description of image](/Images/Landscape-1.png)
+![Description of image](/Images/Landscape-2.png)
+Fig.5 Dehazing results of real Landscape hazy images.
+
+![Description of image](/Images/Non-typical-1.png.png)
+![Description of image](/Images/Non-typical-2.png.png)
+Fig.6 Dehazing results of real Non-typical hazy images.
 
 ## Code
 We will release the detailed code needed to reproduce the experimental part of the article later.
