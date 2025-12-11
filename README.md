@@ -23,8 +23,8 @@ Fig.4 Dehazing results of real People hazy images.
 ![Description of image](/Images/Landscape-2.png)
 Fig.5 Dehazing results of real Landscape hazy images.
 
-![Description of image](/Images/Non-typical-1.png.png)
-![Description of image](/Images/Non-typical-2.png.png)
+![Description of image](/Images/Non-typical-1.png)
+![Description of image](/Images/Non-typical-2.png)
 Fig.6 Dehazing results of real Non-typical hazy images.
 
 ## Code
