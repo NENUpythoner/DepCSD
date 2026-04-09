@@ -7,6 +7,10 @@ Fig.1 The model framework of DepCSD. First, the hazy image is input into the ini
 ## Images
 In the directory "Image", all high-definition pictures displayed in the article are provided for readers to review.
 
+![Description of image](/image/5.png)
+![Description of image](/image/6.png)
+![Description of image](/image/7.png)
+
 ![Description of image](/image/land1.png)
 ![Description of image](/image/land2.png)
 
@@ -15,6 +19,8 @@ In the directory "Image", all high-definition pictures displayed in the article 
 
 ![Description of image](/image/ty1.png)
 ![Description of image](/image/ty2.png)
+
+![Description of image](/image/12.png)
 
 ## Code
 We will release the detailed code needed to reproduce the experimental part of the article later.
