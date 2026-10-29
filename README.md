@@ -21,7 +21,7 @@
 
 ## DepthAnything setup
 
-**Download:** cloud-storage link to be provided by the authors.
+**Download:** cloud-storage link（https://pan.baidu.com/s/1Jzoy3HTwVjSNAQhIzJ2Csw?pwd=yhub 提取码: yhub ） to be provided by the authors.
 
 Download and extract the complete `DepthAnything/` folder into `DepCSD/DepthAnything/`.
 
