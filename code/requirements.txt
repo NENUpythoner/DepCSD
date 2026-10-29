@@ -1,0 +1,12 @@
+torch==2.5.1+cu121
+torchvision==0.20.1+cu121
+numpy==1.23.5
+scipy==1.10.1
+Pillow==9.5.0
+matplotlib==3.7.5
+scikit-image==0.21.0
+opencv-python==4.8.1.78
+scikit-video==1.1.11
+kornia==0.7.3
+kornia-rs==0.1.5
+einops==0.8.0
