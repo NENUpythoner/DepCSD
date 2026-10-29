@@ -27,36 +27,39 @@ Download and extract the complete `DepthAnything/` folder into `DepCSD/DepthAnyt
 
 ## Installation
 
-Target environment: **Windows x64, Python 3.10.16 and an NVIDIA CUDA GPU**. Full DepCSD restoration requires CUDA; CPU inference is not supported.
+Requirements: **Python 3.10.16, an NVIDIA CUDA GPU and a compatible NVIDIA driver**. The supplied environment configuration targets Windows x64; CPU inference is not supported.
 
-Create the environment and enter the project directory. Replace the example project path with your actual location:
+Download and extract this repository to any location. Open a terminal in the project directory containing `main.py` and `requirements.txt`. On Windows, open that directory in File Explorer, type `powershell` in the address bar and press Enter. Use a terminal with Conda initialized.
+
+Create and activate the environment using the Tsinghua Anaconda mirror:
 
 ```powershell
-conda create -n depcsd python=3.10.16 pip -y
+conda create -n depcsd python=3.10.16 pip -y --override-channels -c https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main
 conda activate depcsd
-Set-Location "D:\Projects\DepCSD"
 ```
 
-Install PyTorch from its official CUDA 12.1 index, then resolve all remaining dependencies from PyPI:
+Install all Python dependencies with one command:
 
 ```powershell
-python -m pip install "torch==2.5.1+cu121" "torchvision==0.20.1+cu121" --index-url https://download.pytorch.org/whl/cu121 --no-deps
-python -m pip install -r .\requirements.txt --index-url https://pypi.org/simple
+python -m pip install -r requirements.txt --index-url https://pypi.tuna.tsinghua.edu.cn/simple --extra-index-url https://download.pytorch.org/whl/cu121 --timeout 120 --retries 3
 python -m pip check
 ```
 
-The first pip command alone is incomplete; run the second command as well. An existing matching environment can be reused. For slow PyPI access, replace `https://pypi.org/simple` in the second command with `https://pypi.tuna.tsinghua.edu.cn/simple`; no additional requirements file is needed.
+This command uses the Tsinghua PyPI mirror together with the official PyTorch CUDA 12.1 wheel index required by the pinned `+cu121` packages. No separate PyTorch installation or edited requirements file is needed. An existing environment with matching dependencies can be reused.
 
 ## Run
 
-From the directory containing the main Python file, provide only the input and output folder paths:
+Activate the environment and run from the project directory. Replace `PATH_TO_INPUT_FOLDER` and `PATH_TO_OUTPUT_FOLDER` with your own folder paths; keep quotation marks if a path contains spaces. Absolute paths and paths relative to the current terminal directory are accepted.
 
 ```powershell
-python .\main.py --input "D:\Data\DepCSD_input" --output "D:\Results\DepCSD_outputs"
+conda activate depcsd
+python main.py --input "PATH_TO_INPUT_FOLDER" --output "PATH_TO_OUTPUT_FOLDER"
 ```
 
-For folders located inside the project directory:
+For example, to read `DepCSD_input/` and save to `DepCSD_outputs/` inside the project directory:
 
 ```powershell
-python .\main.py --input ".\DepCSD_input" --output ".\DepCSD_outputs"
+python main.py --input "./DepCSD_input" --output "./DepCSD_outputs"
 ```
+
+Only `--input` and `--output` are required; all restoration settings use the original defaults. The input directory must exist and contain PNG, JPG or JPEG images. The output directory is created automatically. Restored images are saved as PNG files with their original filename stems and input dimensions.
