@@ -367,7 +367,7 @@ class Dehaze(object):
         return img
 
 
-def dehaze(image_name, image, num_iter=3000, plot_during_training=True, show_every=100, *, output_file=None, debug_dir=None):
+def dehaze(image_name, image, num_iter=2200, plot_during_training=True, show_every=100, *, output_file=None, debug_dir=None):
     dh = Dehaze(image_name, image, num_iter, plot_during_training, show_every=show_every, clip=True, output_file=output_file, debug_dir=debug_dir)
     dh.optimize()
     dh.finalize()
