@@ -1,12 +1,5 @@
 # DepCSD: Depth-Conditioned Self-Supervised Dehazing for Real Scenes
 
-**Xingkai Wen¹, Yingjie Liu¹, Ryan Wen Liu², Liang-Jian Deng³, Hao Liu⁴, Jun Liu¹**
-
-¹ Northeast Normal University, Changchun, China  
-² Wuhan University of Technology, Wuhan, China  
-³ University of Electronic Science and Technology of China, Chengdu, China  
-⁴ Hong Kong Baptist University, Hong Kong, China
-
 ## Repository structure
 
 | Path | Description |
